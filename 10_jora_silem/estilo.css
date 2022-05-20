@@ -1,0 +1,102 @@
+body{
+background-color:#6BB3AF;
+}
+.face{
+background-color:#DDB36A;
+width:300px;
+height:380px;
+border-radius:51% 49% 49% 51% / 37% 38% 62% 63% ;
+position: relative;
+margin:0 auto;
+top:100px;
+}
+/*ojos*/
+.ojos{
+background-color:#fff;
+width:85px;
+height:62px;
+border-radius:49% 51% 51% 49% / 49% 57% 43% 51%  ;
+position: relative;
+z-index:10;
+display:inline-block;
+top:120px;
+}
+
+.ojo_uno{
+left:35px;
+
+}
+.ojo_dos{
+left:65px;
+transform: scaleX(-1);
+}
+
+/*pupila*/
+.pupilas{
+background-color:#381C03 ;
+width:48px;
+height:48px;
+clip-path: circle(50% at 50% 50%);
+z-index:5;
+display:inline-block;
+position:relative;
+}
+.pupila_uno{
+  left:20px;
+  top:10px;
+}
+.pupila_dos{
+left:20px;
+top:9px;
+}
+/*cejas*/
+.cejas{
+background-color:#2A190A;
+width: 85px;
+height:85px;
+clip-path: polygon(22% 45%, 70% 44%, 100% 51%, 100% 64%, 72% 58%, 22% 59%, 0 72%, 0 70%);
+z-index:10;
+display:inline-block;
+position:relative;
+top:5px;
+left:30px;
+}
+.ceja_uno{
+left:-145px;
+top:95px;
+}
+.ceja_dos{
+top:-5px;
+transform:scaleX(-1);
+left:150px;
+}
+/*mascarilla*/
+.mascarilla{
+background-color:#fff;
+width:258px;
+height:384px;
+clip-path: polygon(47% 59%, 100% 67%, 100% 86%, 62% 100%, 37% 100%, 0 86%, 0 67%);
+position:relative;
+left:1px;
+top:-285px;
+margin:auto;
+}
+/*cabellos*/
+.cabellos{
+  background-color:#191715;
+   width:330px;
+   height:500px;
+clip-path: polygon(45% 7%, 84% 8%, 100% 26%, 97% 73%, 100% 93%, 71% 100%, 80% 78%, 75% 58%, 76% 33%, 45% 26%);
+  position: relative;
+z-index:10;
+margin:auto;
+}
+.cabello_uno{
+left:-20px;
+top:-700px;
+transform: scaleX(-1);
+}
+.cabello_dos{
+left:12px;
+top:-1200px;
+}

@@ -1,0 +1,454 @@
+*{
+  margin:0px;
+}
+body{
+background-color:#6FD4F4;
+}
+.suelo{
+background-color:#B5E2F0;
+width: 100%;
+height:200px;
+position:fixed;
+top:800px;
+}
+.casa{
+background-color:#DEE7EA;
+width:450px;
+height:258px;
+border-radius:50% 50% 49% 51% / 100% 100% 0% 0% ;
+position:fixed;
+top:550px;
+left:200px;
+}
+.chimenea{
+  width:70px;
+  height:65px;
+  position: fixed;
+  background-color:#DEE7EA;
+  left:500px;
+  top:534px;
+  transform: -moz-transform: rotate(110deg);
+-webkit-transform: rotate(110deg);
+-o-transform: rotate(110deg);
+-ms-transform: rotate(110deg);
+transform: rotate(110deg);
+z-index: 20;
+}
+/*humo*/
+#smoke span {
+  display: block;
+	position: absolute;
+	bottom: -35px; left: 50%; margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 35px solid #4b4b4b;
+	border-radius: 35px;
+	left: 525px; opacity: 0;
+	transform: scale(0.2);
+  bottom: 400px;
+
+}
+
+/* Smoke animation */
+
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(-20px, -130px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(20px, -130px) }
+}
+
+#smoke .s0 { animation: smokeL 10s 0s infinite }
+#smoke .s1 { animation: smokeR 10s 1s infinite }
+#smoke .s2 { animation: smokeL 10s 2s infinite }
+#smoke .s3 { animation: smokeR 10s 3s infinite }
+#smoke .s4 { animation: smokeL 10s 4s infinite }
+#smoke .s5 { animation: smokeR 10s 5s infinite }
+#smoke .s6 { animation: smokeL 10s 6s infinite }
+#smoke .s7 { animation: smokeR 10s 7s infinite }
+#smoke .s8 { animation: smokeL 10s 8s infinite }
+#smoke .s9 { animation: smokeR 10s 9s infinite }
+
+.puertagr{
+background-color:#ACC9DE;
+width:220px;
+height:170px;
+border-radius:54% 62% 10% 0% / 100% 95% 3% 0%  ;
+position:fixed;
+top:640px;
+left:320px;
+}
+.puertapq{
+background-color:#BAD8EE;
+width:180px;
+height:140px;
+border-radius:54% 62% 10% 0% / 100% 95% 3% 0% ;
+position:fixed;
+top:670px;
+left:340px;
+}
+.cerojo{
+  width:18px;
+  height:18px;
+  border-radius: 100px;
+  background-color:#814803;
+  position:fixed;
+  left:480px;
+  top:750px;
+}
+.luna{
+width:150px;
+height:150px;
+border-radius:50%;
+background-color:white;
+position:fixed;
+top:150px;
+left:900px ;
+}
+.circulogr{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  position: fixed;
+  background-color:#F1F9FA;
+  top:710px;
+  left:790px;
+  z-index:10;
+}
+.circulomd{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  position:fixed;
+  background-color:#F1F9FA;
+  top:650px;
+  left:800px ;
+}
+/*manos*/
+@keyframes mano {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(45deg);
+  }
+}
+.manodr{
+width:5px;
+height:50px;
+position:fixed;
+background-color:#85490D;
+transform:-moz-transform: rotate(50deg);
+
+transform: rotate(50deg);
+left:885px;
+top:705px;
+animation: mano 3s infinite ;
+}
+
+.manoiz{
+  width:5px;
+  height:50px;
+  position:absolute;
+  background-color:#85490D;
+  transform:-moz-transform: rotate(200deg);
+-webkit-transform: rotate(200deg);
+-o-transform: rotate(200deg);
+-ms-transform: rotate(200deg);
+transform: rotate(200deg);
+  left:790px;
+  top:-95px;
+  animation: manoiz 3s infinite linear;
+}
+@keyframes manoiz {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-45deg);
+  }
+}
+
+.redondouno{
+width:20px;
+height:20px;
+border-radius:50%;
+background-color:black;
+top:-70px;
+left:830px;
+position: absolute;
+z-index:20;
+}
+.redondodos{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background-color:black;
+  top:-40px;
+  left:830px;
+  position: absolute;
+  z-index:20;
+}
+.ojouno{
+width:15px;
+height:15px;
+border-radius:50%;
+background-color:black;
+top:-125px;
+left:846px;
+position: absolute;
+}
+.ojodos{
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  background-color:black;
+  top:-125px;
+  left:820px;
+  position: absolute;
+}
+.nariz{
+width:35px;
+height:35px;
+background-color:#DB7E38;
+ clip-path: polygon(0 55%, 100% 77%, 100% 27%););
+ position: absolute;
+ left:810px;
+ top:-125px;
+z-index:25;
+}
+
+.nube{
+  width: 350px;
+  height: 120px;
+  border-radius: 100px;
+position:fixed;
+margin: 120px auto 20px;
+left:200px;
+top:100px;
+background: linear-gradient(top, #BFF 5%, #DFF 100%);
+background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
+background: -moz-linear-gradient(top, #BFF 5%, #DFF 100%);
+background: -ms-linear-gradient(top, #BFF 5%, #DFF 100%);
+background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
+
+}
+#nube:after, #nube:before {
+  content: '';
+position:fixed;
+background: #FFF;
+z-index: -1;
+  }
+
+  #nube:after {
+  width: 100px; height: 100px;
+  top: 160px; left:250px;
+border-radius: 100px;
+  position:fixed;
+  }
+
+#nube:before {
+  width: 200px; height: 200px;
+  top:140px; left:300pX;
+  border-radius: 200px;
+  position:fixed;
+
+}
+.nubes{
+  width: 350px;
+  height: 120px;
+  border-radius: 100px;
+position:fixed;
+margin: 120px auto 20px;
+left:1250px;
+top:100px;
+background: linear-gradient(top, #BFF 5%, #DFF 100%);
+background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
+background: -moz-linear-gradient(top, #BFF 5%, #DFF 100%);
+background: -ms-linear-gradient(top, #BFF 5%, #DFF 100%);
+background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
+
+}
+#nube1:after, #nube1:before {
+  content: '';
+position:fixed;
+background: #FFF;
+z-index: -1;
+  }
+
+  #nube1:after {
+  width: 100px; height: 100px;
+  top: 160px; left:1300px;
+border-radius: 100px;
+  position:fixed;
+  }
+
+#nube1:before {
+  width: 200px; height: 200px;
+  top:130px; left:1350px ;
+  border-radius: 200px;
+  position:fixed;
+
+}
+
+.hielo{
+width:380px;
+height:380px;
+background-color:#9DCFDD;
+clip-path: ellipse(43% 7% at 50% 50%);
+position: fixed;
+left:1000px;
+top:645px;
+}
+
+
+#nevado {
+   width: 768px;
+   min-height: 100%!important;
+   height: 800px;
+   position: relative;
+   margin: 0 auto;
+}
+#nevar div {
+   position: absolute;
+   top: -10px;
+   animation-name: nieve, copos;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-timing-function: ease-in;
+}
+/*arbol*/
+.base{
+width:15px;
+height:200px;
+background-color:945202;
+position: fixed;
+left: 1500px;
+top: 605px;
+}
+.grande{
+  width: 350px;
+  height: 120px;
+  border-radius: 100px;
+position:fixed;
+margin: 120px auto 20px;
+  background-color:#FFFFFF;
+  position: fixed;
+  left:1340px;
+  top: 450px;
+}
+
+.mediano{
+  width: 300px;
+  height: 95px;
+  border-radius: 100px;
+position:fixed;
+margin: 120px auto 20px;
+  background-color:#FFFFFF;
+  position: fixed;
+  left:1370px;
+  top:380px;
+}
+.pequeño{
+  width:200px;
+  height: 95px;
+  border-radius: 100px;
+position:fixed;
+margin: 120px auto 20px;
+  background-color:#FFFFFF;
+  position: fixed;
+  left:1415px;
+  top: 320px;
+}
+.copos {
+   color: rgba(255,255,255,.7);
+   font-size: 1em;
+   position: absolute;
+}
+.copos.c1 {
+   font-size: 1.7em;
+   left: 60px;
+   animation-duration: 5s;
+   color:rgba(160,240,255, .6);
+}
+.copos.c2 {
+   font-size: 1.2em;
+   left: 140px;
+   animation-duration: 8s;
+}
+.copos.c3 {
+   font-size: 1.1em;
+   left: 220px;
+   animation-duration: 9s;
+}
+.copos.c4 {
+   font-size: 1.5em;
+   left: 300px;
+   animation-duration: 6s;
+   color:rgba(48,176,255, .4);
+}
+.copos.c5 {
+   font-size: 1em;
+   left: 380px;
+   animation-duration: 7s;
+}
+.copos.c6 {
+   font-size: .9em;
+   left: 470px;
+   animation-duration: 10s;
+}
+.copos.c7 {
+   font-size: 2em;
+   left: 570px;
+   animation-duration: 10s;
+   color:rgba(0,240,255, .4);
+}
+.copos.c8 {
+   font-size: 1em;
+   left: 670px;
+   animation-duration: 10s;
+}
+.copos span {
+    display: block;
+    top: -50px;
+    font-size: 1.3em;
+    opacity: .8;
+    white-space: pre;
+    font-family: monospace;
+}
+
+
+}
+.mascopos {display: none; margin-left: -200px;}
+#mas:target .mascopos {display: block;}
+#controles {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#controles a {
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1em;
+    margin-right: 2em;
+}
+
+@keyframes nieve {
+   from {top: -100px;}
+   to {top: 1200px;}
+}
+@-keyframes copos {
+    0% { transform: rotate(0deg) translate(0px, 0px);}
+    100% { transform: rotate(720deg) translate(0px, 100px);}
+}
+
+
+
+}
